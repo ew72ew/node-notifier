@@ -65,6 +65,7 @@ WindowsToaster.prototype.notify = function(options, callback) {
   options = utils.mapToWin8(options);
   var argsList = utils.constructArgumentList(options, {
     wrapper: '',
+    noEscape: true,
     explicitTrue: true,
     noRemoveNewLines: true
   });
